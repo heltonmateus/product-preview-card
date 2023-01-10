@@ -12,25 +12,99 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      margin: 0px;
+      padding: 10%;
+      background-color:  hsl(30, 38%, 92%);
+    }
+
+    #arte{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #texto{
+      padding-left: 3%;
+      padding-top: 22.5px;
+      padding-right: 3% ;
+      padding-bottom: 21px ;
+      border-right: solid white 1px;
+      border-end-end-radius: 2%;
+      border-top-right-radius: 2% ;
+      background-color: white;
+    }
+
+    #image img{
+      border-top-left-radius:  2%;
+      border-end-start-radius: 2% ;
+    }
+
+    #valor{
+      display: flex;
+      flex-direction: row;
+    }
+
+    #valor1{
+      font-size: 30px;  
+      color: green;
+      font-weight: bold;
+      }
+
+    #valor2{
+      font-size: 15px;
+      text-decoration: line-through;
+      padding-top: 25px;
+      padding-left: 25px;
+    }
+
+  #botao{
+    background-color: green;
+    border: 0px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 68px;
+    padding-right: 68px;
+    border-radius: 10px;
+  }
+
+
   </style>
 </head>
 <body>
 
-  Preview
+  <div id="arte">
 
-  Gabrielle Essence Eau De Parfum
+  <div id="image">
+  <img src="./images/image-product-desktop.jpg" alt="" height="444px" width="310px">
+  </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
 
-  $149.99
-  $169.99
+  <div id="texto">
+  <p> PERFUME</p>
 
-  Add to Cart
+  <h1>Gabrielle <br> Essence Eau <br> De Parfum</h1>
+
+  <p> A floral, solar and voluptuous <br> interpretation composed by <br> Olivier Polge, 
+  Perfumer-Creator <br> for the House of CHANEL.</p>
+
+<div id="valor">
+  <p id="valor1">$149.99</p>
+  <p id="valor2"> $169.99 </p>
+</div>
+
+  <button id="botao">Add to Cart</button>  
+
+  </div>
+
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Helton Almeida</a>.
   </div>
 </body>
 </html>
